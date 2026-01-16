@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta name="format-detection" content="telephone=no"> 
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <!-- SEO Meta Tags -->
+  <title>Hammamet Beach - Hôtel de Luxe en Tunisie</title>
+  <meta name="description"
+    content="Découvrez Hammamet Beach, votre évasion méditerranéenne parfaite. Hôtel de luxe avec plage privée, piscine, spa et chambres modernes vue mer en Tunisie." />
+  <meta name="keywords"
+    content="Hammamet Beach, hôtel Tunisie,, plage privée, hôtel luxe Tunisie, vacances Méditerranée" />
+  <meta name="author" content="Hammamet Beach Hotel" />
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Hammamet Beach - Hôtel de Luxe" />
+  <meta property="og:description"
+    content="Votre évasion méditerranéenne parfaite. Découvrez le luxe, le confort et la beauté du littoral tunisien." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.hammametbeach.com" />
+  <meta property="og:image" content="assets/images/Hotel-2787-20210307-112905.jpg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cabin:400,500,600,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/enhancements.css">
+
+  <!-- Set French as default language before page loads -->
+  <script>
+    // Set French as default if no language is stored
+    if (!localStorage.getItem('selectedLanguage')) {
+      localStorage.setItem('selectedLanguage', 'fr');
+    }
+  </script>
+
+</head>
+
+<body>
+
+  <!-- Merged Top bar and Main menu -->
+  <div class="menu-item" role="navigation" aria-label="Main navigation">
+    <!-- Top section with contact info and social -->
+    <div class="menu-item-top">
+      <div class="tn-left">
+        <ul>
+          <li><i class="fa fa-envelope"></i> contact@hammametbeach.com</li>
+        </ul>
+      </div>
+
+      <div class="tn-right">
+        <div class="top-social" role="navigation" aria-label="Social media links">
+          <a href="https://www.facebook.com/HotelHammametBeach" aria-label="Visit our Facebook page"><i
+              class="fa-brands fa-facebook" aria-hidden="true"></i></a>
+          <a href="https://www.instagram.com/hotel_hammamet_beach" aria-label="Visit our Instagram page"><i
+              class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+          <a href="https://www.tiktok.com/@hammametbeach?_r=1&_t=ZM-92W8eC1OUeK" target="_blank"
+            aria-label="Visit our TikTok page"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></a>
+        </div>
+        <div class="language-option" id="languageSelector">
+          <img id="flagImg" src="https://flagcdn.com/w40/fr.png" alt="Flag Image">
+          <span id="currentLang">EN <i class="fa fa-angle-down"></i></span>
+          <div class="flag-dropdown">
+            <ul>
+              <li><a href="#" data-lang="fr" class="lang-option">FR</a></li>
+              <li><a href="#" data-lang="en" class="lang-option">EN</a></li>
+              <li><a href="#" data-lang="pl" class="lang-option">PL</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom section with navigation menu -->
+    <div class="menu-item-bottom">
+      <div class="mobile-menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="logo">
+        <a href="#home">
+          <img src="assets/images/Logo.png" alt="Hammamet Beach logo">
+        </a>
+      </div>
+      <div class="nav-menu" role="navigation" aria-label="Primary navigation">
+        <ul class="mainmenu" role="menubar">
+          <li class="active"><a href="#home" data-i18n="nav.home">Accueil</a></li>
+          <li><a href="#about" data-i18n="nav.about">À Propos</a></li>
+          <li><a href="#chambre" data-i18n="nav.rooms">Chambres</a></li>
+          <li>
+            <a href="#gallery" data-i18n="nav.gallery">Galerie</a>
+            <ul class="dropdown">
+              <li><a href="#mousse-gallery" data-i18n="nav.mousseGallery">Soirée Mousse</a></li>
+              <li><a href="#activities-fun" data-i18n="nav.activitiesFun">Activités & Loisirs</a></li>
+              <li><a href="#delicious-gastronomy" data-i18n="nav.gastronomy">Gastronomie Délicieuse</a></li>
+              <li><a href="#pool-section" data-i18n="nav.piscine">Nos Piscine</a></li>
+
+            </ul>
+          </li>
+          <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+        <div class="nav-right">
+          <i class="fa fa-search" id="searchIcon" style="cursor: pointer;" role="button" aria-label="Open search"
+            tabindex="0"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <header class="hero-header" id="home">
+    <video autoplay muted loop class="bg-video">
+      <source src="assets/videos/waves1.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+    <div class="hero-content">
+      <p data-i18n="hero.welcome"> Bienvenue A </p>
+      <h1>Hammamet Beach</h1>
+      <p data-i18n="hero.tagline">Nous fabriquons du sourire.</p>
+
+    </div>
+    <div class="scroll-indicator">
+      <a href="#about"><i class="fa fa-chevron-down"></i></a>
+    </div>
+  </header>
+
+  <!-- About Us Section -->
+  <section class="aboutus-section" id="about">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 0 8%;">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+        <div class="about-text">
+          <div class="section-title">
+            <span data-i18n="about.label">À Propos de Nous</span>
+            <h2>Hammamet Beach<br />Hotel</h2>
+          </div>
+
+          <p class="f-para" data-i18n="about.para1">
+            Je suis un hôtel situé à Hammamet, à mi-chemin entre les centres-villes de Hammamet et de Nabeul.
+            Posé sur un jardin arboré de 4000 m², les pieds dans l’eau, je bénéficie d’une vue atypique sur la
+            Méditerranée.
+          </p>
+
+          <p class="s-para" data-i18n="about.para2">
+            Matin, midi et soir, en formule pension complète, nous proposons une cuisine sincère, ancrée dans
+            les saisons, locale mais moderne, joyeuse et généreuse, toujours dans une ambiance décontractée,
+            simple et conviviale.
+          </p>
+
+          <p class="s-para" data-i18n="about.para3">
+            Tout au long de la journée, au soleil ou sous les parasols de notre plage ou de nos quatre piscines,
+            savourez un cocktail de fruits, une bière ou le vin de votre choix. Sans oublier notre parc aquatique.
+          </p>
+
+          <p class="s-para" data-i18n="about.para4">
+            Une équipe d’animation dynamique anime quotidiennement des cours de yoga, des activités sportives
+            et des soirées à thème.
+          </p>
+
+          <p class="s-para" data-i18n="about.para5">
+            Franchissez les portes de notre hôtel et nous mettons tout en œuvre pour que votre séjour vous donne
+            envie de revenir. Il n’existe pas de plus belle récompense qu’un travail accompli avec sincérité.
+          </p>
+          <a href="#contact" class="primary-btn about-btn" data-i18n="about.readMore">Nous Contacter</a>
+        </div>
+        <div class="image">
+          <img src="assets/images/Hotel-2787-20210307-112905.jpg" alt="Hammamet Beach">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Rooms Section -->
+  <section class="hp-room-section" id="chambre">
+    <div class="container-fluid" style="width: 100%; padding: 0;">
+      <div class="section-title" style="max-width: 1200px; margin: 0 auto; padding: 0 8%;">
+        <span data-i18n="rooms.discover">DÉCOUVREZ</span>
+        <h2 data-i18n="rooms.title">Nos Chambres & Suites</h2>
+      </div>
+      <div class="hp-room-items">
+        <div class="rooms-grid" id="rooms-grid">
+          <div class="hp-room-item set-bg" style="background-image: url('assets/images/Standars.png');">
+            <div class="room-name">
+              <h3 data-i18n="rooms.standard">Chambre Standard</h3>
+            </div>
+            <div class="hr-text">
+              <h3 data-i18n="rooms.standard">Chambre Standard</h3>
+              <ul class="room-features">
+                <li><i class="fa fa-snowflake"></i> <span data-i18n="rooms.ac">Climatisation</span></li>
+                <li><i class="fa fa-tv"></i> <span data-i18n="rooms.tv">TV Écran Plat</span></li>
+                <li><i class="fa fa-bed"></i> <span data-i18n="rooms.curtains">Rideaux Occultants</span></li>
+                <li>
+                  <svg viewBox="0 0 24 24" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+                    fill="#FFFFFF" style="width: 20px; height: 20px; vertical-align: middle;">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <defs>
+                        <style>
+                          .cls-1 {
+                            fill: none;
+                            stroke: #FFFFFF;
+                            stroke-miterlimit: 10;
+                            stroke-width: 1.91px;
+                          }
+                        </style>
+                      </defs>
+                      <rect class="cls-1" x="2.45" y="13.91" width="19.09" height="8.59"></rect>
+                      <line class="cls-1" x1="23.45" y1="13.91" x2="0.55" y2="13.91"></line>
+                      <line class="cls-1" x1="7.23" y1="13.91" x2="7.23" y2="22.5"></line>
+                      <line class="cls-1" x1="12" y1="13.91" x2="12" y2="22.5"></line>
+                      <line class="cls-1" x1="16.77" y1="13.91" x2="16.77" y2="22.5"></line>
+                      <path class="cls-1" d="M6.27,12V7.23A5.73,5.73,0,0,1,12,1.5h0a5.73,5.73,0,0,1,5.73,5.73V12">
+                      </path>
+                      <line class="cls-1" x1="6.27" y1="8.18" x2="18.68" y2="8.18"></line>
+                      <line class="cls-1" x1="12" y1="1.5" x2="12" y2="12"></line>
+                    </g>
+                  </svg>
+                  <span data-i18n="rooms.balcony">Balcon Privé</span>
+                </li>
+              </ul>
+              <a href="#contact" class="primary-btn" data-i18n="rooms.moreDetails">Plus de Détails</a>
+            </div>
+          </div>
+
+          <div class="hp-room-item set-bg" style="background-image: url('assets/images/modern.png');">
+            <div class="room-name">
+              <h3 data-i18n="rooms.Modern">Chambre Moderne</h3>
+            </div>
+            <div class="hr-text">
+              <h3 data-i18n="rooms.Modern">Chambre Moderne</h3>
+              <ul class="room-features">
+                <li><i class="fa fa-wifi"></i> <span data-i18n="rooms.wifi">WiFi Gratuit</span></li>
+                <li><i class="fa fa-snowflake"></i> <span data-i18n="rooms.ac">Climatisation</span></li>
+                <li><i class="fa fa-tv"></i> <span data-i18n="rooms.tv">TV Écran Plat</span></li>
+                <li><i class="fa fa-bed"></i> <span data-i18n="rooms.curtains">Rideaux Occultants</span></li>
+              </ul>
+              <a href="#contact" class="primary-btn" data-i18n="rooms.moreDetails">Plus de Détails</a>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+
+  <section class="Gallery" style="background: var(--white-foam);">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 0px 20px;">
+      <div class="section-title">
+        <h2 data-i18n="gallery.title">Galerie</h2>
+      </div>
+    </div>
+
+    <!-- First Set of Cards -->
+    <div class="cards-section" id="mousse-gallery">
+      <div class="cards-title" style="text-align: center; margin-bottom: 40px;">
+        <h2 data-i18n="gallery.mousse" style="color: #fcd2ff;">Soirée Mousse</h2>
+
+        <div class="container" style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 20px;">
+          <div class="card">
+            <div class="image image1"></div>
+          </div>
+          <div class="card">
+            <div class="image image2"></div>
+          </div>
+          <div class="card">
+            <div class="image image3"></div>
+          </div>
+          <div class="card">
+            <div class="image image4"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Second Set of Cards -->
+    <div class="cards-section" id="activities-fun" style="margin-top: 80px;">
+      <div class="cards-title" style="text-align: center; margin-bottom: 40px;">
+        <h2 data-i18n="gallery.activities" style="color: #ffd2ff;">Activités & Loisirs</h2>
+      </div>
+
+      <div class="container" style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 20px;">
+        <div class="card">
+          <div class="image image6"></div>
+        </div>
+        <div class="card">
+          <div class="image image7"></div>
+        </div>
+        <div class="card">
+          <div class="image image8"></div>
+        </div>
+        <div class="card">
+          <div class="image image9"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Third Set of Cards -->
+    <div class="cards-section" id="delicious-gastronomy" style="margin-top: 80px;">
+      <div class="cards-title" style="text-align: center; margin-bottom: 40px;">
+        <h2 data-i18n="gallery.gastronomy" style="color: #ffd2ff;">
+          Gastronomie Délicieuse
+        </h2>
+      </div>
+
+      <div class="container" style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 20px;">
+        <div class="card">
+          <div class="image image10"></div>
+        </div>
+        <div class="card">
+          <div class="image image11"></div>
+        </div>
+        <div class="card">
+          <div class="image image12"></div>
+        </div>
+        <div class="card">
+          <div class="image image13"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pool Set of Cards -->
+    <div class="cards-section" id="pool-section" style="margin-top: 80px;">
+      <div class="cards-title" style="text-align: center; margin-bottom: 40px;">
+        <h2 data-i18n="gallery.pool" style="color: #ffd2ff;">Nos Piscines</h2>
+      </div>
+
+      <div class="container" style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 20px;">
+        <div class="card">
+          <div class="image imagePool1"></div>
+        </div>
+        <div class="card">
+          <div class="image imagePool2"></div>
+        </div>
+        <div class="card">
+          <div class="image imagePool3"></div>
+        </div>
+        <div class="card">
+          <div class="image imagePool4"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+        <!-- Services Section -->
+        <section class="services-section" style="background: var(--white-foam);">
+          <div style="max-width: 1200px; margin: 0 auto;">
+            <div class="section-title">
+              <h2 data-i18n="services.title">Services de l'Hôtel</h2>
+            </div>
+            <div class="services-grid">
+              <div class="service-card">
+                <i class="fa fa-cutlery service-icon"></i>
+                <h3 data-i18n="services.restaurant">Restaurant & Bar</h3>
+                <p data-i18n="services.restaurantDesc">Dégustez une cuisine méditerranéenne occidentale et orientale et
+                  des fruits de mer frais avec
+                  une vue imprenable sur la piscine.</p>
+              </div>
+              <div class="service-card">
+                <i class="fa fa-life-ring service-icon"></i>
+                <h3 data-i18n="services.beach">Plage Privée</h3>
+                <p data-i18n="services.beachDesc">Accès exclusif à des plages de sable fin avec chaises longues
+                  gratuites.
+                </p>
+              </div>
+              <div class="service-card">
+                <i class="fa fa-tint service-icon"></i>
+                <h3 data-i18n="services.pool">Piscine</h3>
+                <p data-i18n="services.poolDesc">Piscine à débordement extérieure avec toboggans et piscine privée pour
+                  la détente.</p>
+              </div>
+              <div class="service-card">
+                <i class="fa fa-spa service-icon"></i>
+                <h3 data-i18n="services.spa">Spa & Bien-être</h3>
+                <p data-i18n="services.spaDesc">Ressourcez-vous avec des soins traditionnels de hammam et de massage.
+                </p>
+              </div>
+              <div class="service-card">
+                <i class="fa fa-wifi service-icon"></i>
+                <h3 data-i18n="services.wifi">WiFi Gratuit</h3>
+                <p data-i18n="services.wifiDesc">Accès internet haut débit dans le centre d'affaires.</p>
+              </div>
+              <div class="service-card">
+                <i class="fa fa-car service-icon"></i>
+                <h3 data-i18n="services.parking">Parking Gratuit</h3>
+                <p data-i18n="services.parkingDesc">Parking gratuit pour tous les clients pendant leur séjour.</p>
+              </div>
+              <div class="service-card">
+                <i class="fa fa-table-tennis service-icon"></i>
+                <h3 data-i18n="services.tennis">Court de Tennis</h3>
+                <p data-i18n="services.tennisDesc">Accès exclusif au court de tennis pour les clients avec raquette de
+                  tennis.
+                </p>
+              </div>
+              <div class="service-card">
+                <i class="fa fa-golf-ball service-icon"></i>
+                <h3 data-i18n="services.golf">Terrain de Golf</h3>
+                <p data-i18n="services.golfDesc">Accès exclusif au terrain de golf pour les clients avec club de golf.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="testimonials-section" aria-label="Guest testimonials">
+          <div style="max-width: 1200px; margin: 0 auto;">
+
+            <div class="section-title">
+              <span>AVIS</span>
+              <h2>Ce que disent nos clients</h2>
+            </div>
+
+            <div class="testimonial-slider-container" role="region" aria-label="Testimonials carousel">
+              <button class="slider-btn prev-btn" aria-label="Previous testimonial"><i class="fa fa-chevron-left"
+                  aria-hidden="true"></i></button>
+
+              <div class="testimonial-slider-viewport">
+                <div class="testimonial-wrapper" role="list">
+                  <!-- Testimonial 1 -->
+                  <div class="testimonial-slide" role="listitem">
+                    <div class="testimonial-card">
+                      <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                      <p>
+                        "Bel hôtel nous y allons deux fois par an et nous nous sentons très bien. Le personnel et la
+                        direction sont très professionnels.
+                        Chambre très satisfaisante. Le buffet varie beaucoup."
+                      </p>
+                      <div class="testimonial-author">
+                        <strong>Aurélie C</strong>
+                        <span>France</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Testimonial 2 -->
+                  <div class="testimonial-slide" role="listitem">
+                    <div class="testimonial-card">
+                      <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                      <p>
+                        "Nous avons passé de superbes vacances dans cet hôtel. La propriété est bien située, très propre
+                        et parfaitement
+                        aménagée.
+                        La structure avec les toboggans a fait le bonheur de nos ados, et les piscines et la plage sont
+                        impeccablement
+                        entretenues.
+                        Le restaurant est varié et de bonne qualité."
+                      </p>
+                      <div class="testimonial-author">
+                        <strong>Natalie D</strong>
+                        <span>France</span>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                  <!-- Testimonial 3 -->
+                  <div class="testimonial-slide" role="listitem">
+                    <div class="testimonial-card">
+                      <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                      <p>
+                        "Un paradis absolu ! La vue sur la mer depuis notre chambre était à couper le souffle, et la
+                        plage privée
+                        était si
+                        paisible.
+                        Les soins au spa étaient le moyen idéal de se détendre après une journée au soleil."
+                      </p>
+                      <div class="testimonial-author">
+                        <strong>Sophie M</strong>
+                        <span>Royaume-Uni</span>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <button class="slider-btn next-btn" aria-label="Next testimonial"><i class="fa fa-chevron-right"
+                  aria-hidden="true"></i></button>
+            </div>
+
+            <div class="slider-dots" role="tablist" aria-label="Testimonial navigation dots"></div>
+
+            <div style="text-align: center; margin-top: 3rem;">
+              <p style="text-align: center; margin-bottom: 10px;">Pour plus d'avis, cliquez ici</p>
+              <a href="https://www.tripadvisor.com/Hotel_Review-g23547400-d1094172-Reviews-Hammamet_Beach-Mrezga_Hammamet_Nabeul_Governorate.html"
+                target="_blank" aria-label="TripAdvisor">
+                <img src="assets/images/tripadvisor-logo-.png" alt="TripAdvisor Logo"
+                  style="width: 150px; height: auto; display: block; margin: 0 auto;">
+              </a>
+            </div>
+          </div>
+        </section>
+
+
+
+
+        <!-- Contact Section -->
+        <section id="contact" style="background: var(--white-foam);">
+          <div style="max-width: 1200px; margin: 0 auto;">
+            <div class="section-title">
+              <span data-i18n="contact.label">PRENEZ CONTACT</span>
+              <h2 data-i18n="contact.title">Contactez-nous</h2>
+            </div>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-top: 2rem;">
+              <div class="contact-info" style="margin-top:70px;">
+                <div class="contact-item">
+                  <i class="fa fa-map-marker"></i>
+                  <div>
+                    <h4 data-i18n="contact.addressLabel">Adresse</h4>
+                    <p>Mrezga, Hammamet 8050, Tunisie</p>
+                  </div>
+                </div>
+
+                <div class="contact-item">
+                  <i class="fa fa-envelope"></i>
+                  <div>
+                    <h4 data-i18n="contact.emailLabel">Email</h4>
+                    <p>contact@hammametbeach.com</p>
+                  </div>
+                </div>
+              </div>
+              <div class="map-container">
+                <iframe
+                  src="https://www.google.com/maps?q=Hammamet+Beach,+Mrezga,+Hammamet+8050,+Tunisia&output=embed&zoom=19"
+                  width="100%" height="250" style="border:0; border-radius: 10px;" allowfullscreen="true" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <a href="https://www.google.com/travel/search?ts=CAESCgoCCAMKAggDEAAaHBIaEhQKBwjqDxABGBISBwjqDxABGBMYATICEAAqBwoFOgNUTkQ&qs=CAEyE0Nnb0k5TjIzNmN6UHVyRUpFQUU4CEIJEal3mQViExn0QgkR5j-W5U4EC4Q&utm_campaign=sharing&utm_medium=link_btn&utm_source=htls"
+                  target="_blank" class="primary-btn"
+                  style="display: inline-block; margin-top: 15px; width: 100%; text-align: center;">
+                  <i class="fa fa-external-link" style="margin-right: 8px;"></i><span
+                    data-i18n="contact.googleTravel">Voir sur
+                    Google Travel</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <footer>
+          <div style="max-width: 1200px; margin: 0 auto; padding: 2rem 0;">
+            <div
+              style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 2rem;">
+              <div>
+                <h3 style="color: var(--ocean-teal); margin-bottom: 1rem;">Hammamet Beach</h3>
+                <p data-i18n="footer.description">Votre évasion méditerranéenne parfaite. Découvrez le luxe, le confort
+                  et la
+                  beauté du littoral tunisien.</p>
+              </div>
+              <div>
+                <h4 style="color: var(--ocean-teal); margin-bottom: 1rem;" data-i18n="footer.follow">Suivez-nous</h4>
+                <div class="footer-social">
+                  <a href="https://www.facebook.com/HotelHammametBeach"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="https://www.instagram.com/hotel_hammamet_beach"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="https://www.tiktok.com/@hammametbeach?_r=1&_t=ZM-92W8eC1OUeK" target="_blank"><i
+                      class="fa-brands fa-tiktok"></i></a>
+                </div>
+              </div>
+            </div>
+            <div style="text-align: center; padding-top: 2rem; border-top: 1px solid var(--white-foam);">
+              © 2025 Hammamet Beach • Conçu pour la détente et la simplicité
+            </div>
+          </div>
+        </footer>
+
+
+
+        <!-- Back to Top Button -->
+        <a href="#home" class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+        </a>
+
+        <!-- Search Modal -->
+        <div class="search-modal" id="searchModal">
+          <div class="search-modal-content">
+            <div class="search-header">
+              <h3>Rechercher</h3>
+              <span class="search-close" id="searchClose">&times;</span>
+            </div>
+            <div class="search-input-container">
+              <input type="text" id="searchInput" placeholder="Rechercher des titres..." autocomplete="off">
+              <i class="fa fa-search"></i>
+            </div>
+            <div class="search-results" id="searchResults"></div>
+          </div>
+        </div>
+
+        <!-- Lightbox Modal -->
+        <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image lightbox"
+          aria-hidden="true">
+          <span class="lightbox-close" role="button" tabindex="0" aria-label="Close lightbox">&times;</span>
+          <button class="lightbox-nav lightbox-prev" aria-label="Previous image">&#10094;</button>
+          <button class="lightbox-nav lightbox-next" aria-label="Next image">&#10095;</button>
+          <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="Gallery image">
+          </div>
+        </div>
+
+        <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
