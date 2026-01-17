@@ -1069,3 +1069,28 @@ revealElements.forEach((el, index) => {
   }
   observer.observe(el);
 });
+
+// ==================== VIDEO AUTOPLAY FALLBACK ====================
+document.addEventListener('DOMContentLoaded', function () {
+  const heroVideo = document.querySelector('.bg-video');
+  if (heroVideo) {
+    // Attempt to play
+    const playPromise = heroVideo.play();
+
+    if (playPromise !== undefined) {
+      playPromise.catch(error => {
+        // Auto-play was prevented
+        console.log("Autoplay was prevented. Adding interaction listener to start video.");
+
+        // Start on first interaction if blocked
+        const startVideo = () => {
+          heroVideo.play();
+          document.removeEventListener('click', startVideo);
+          document.removeEventListener('touchstart', startVideo);
+        };
+        document.addEventListener('click', startVideo);
+        document.addEventListener('touchstart', startVideo);
+      });
+    }
+  }
+});
