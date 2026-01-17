@@ -256,7 +256,11 @@ const translations = {
     },
     testimonials: {
       label: "REVIEWS",
-      title: "What Our Guests Say"
+      title: "What Our Guests Say",
+      rev1: "Beautiful hotel, we go there twice a year and feel very good. The staff and management are very professional. Very satisfactory room. The buffet varies a lot.",
+      rev2: "Great stay, great hotel. Very complete buffet for all tastes. Pleasant and helpful hotel staff. I recommend 1000%.",
+      rev3: "Everything is perfect, the hotel is very beautiful and the staff is very kind. Great holiday, good animation, very good vacation!",
+      tripAdvisorLink: "For more reviews, click here"
     },
     contact: {
       label: "GET IN TOUCH",
@@ -344,7 +348,11 @@ const translations = {
     },
     testimonials: {
       label: "AVIS",
-      title: "Ce que disent nos invités"
+      title: "Ce que disent nos invités",
+      rev1: "Bel hôtel nous y allons deux fois par an et nous nous sentons très bien. Le personnel et la direction sont très professionnels. Chambre très satisfaisante. Le buffet varie beaucoup.",
+      rev2: "Super séjour ! Super hôtel ! Buffet très complet et pour tous les goûts. Personnel de l’hôtel agréable et serviable. Je recommande à 1000 %.",
+      rev3: "Tout est parfait l’hôtel est très beau et le personnel très gentil super vacances bonne animation très bonnes vacances !",
+      tripAdvisorLink: "Pour plus d'avis, cliquez ici"
     },
     contact: {
       label: "NOUS CONTACTER",
@@ -432,7 +440,11 @@ const translations = {
     },
     testimonials: {
       label: "OPINIE",
-      title: "Co mówią nasi goście"
+      title: "Co mówią nasi goście",
+      rev1: "Piękny hotel, odwiedzamy go dwa razy w roku i czujemy się tu bardzo dobrze. Personel i kierownictwo są bardzo profesjonalni. Pokój bardzo zadowalający. Bufet jest bardzo urozmaicony.",
+      rev2: "Świetny pobyt, świetny hotel. Bardzo bogaty bufet dla każdego gustu. Miły i pomocny personel hotelu. Polecam w 1000%.",
+      rev3: "Wszystko jest idealne, hotel jest bardzo piękny, a personel bardzo miły. Świetne wakacje, dobra animacja, bardzo dobry wypoczynek!",
+      tripAdvisorLink: "Aby uzyskać więcej opinii, kliknij tutaj"
     },
     contact: {
       label: "SKONTAKTUJ SIĘ",
@@ -682,10 +694,10 @@ let currentImageIndex = 0;
 let allImages = [];
 
 // collect all images only when DOM is loaded to ensure all background images are available
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   // Collection of images
   allImages = [];
-  
+
   // Collect all images from both gallery cards and gallery items
   galleryCards.forEach((card, index) => {
     const imageDiv = card.querySelector('.image');
